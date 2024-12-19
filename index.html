@@ -1,0 +1,281 @@
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Red top bar of the website -->
+    <section class="topbar">
+        <div class="container topbar-wrapper">
+            <div class="social">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="contact">
+                <i class="fa-solid fa-square-phone"></i>
+                <p>000 000 000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Header -->
+    <header class="container" id="home">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+            <ul id="menuList">
+                <li><a href="">Home</a></li>
+                <li><a href="">Donate Blood</a></li>
+                <li><a href="">Find Donors</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Update</a></li>
+                <li><a href="">Log Out</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <section class="banner">
+            <div class="banner-text">
+                <h1>Donate Blood, Save Humanity!</h1>
+                <p>Your donation can make a difference. Join us in saving humanitys.</p>
+                <div class="banner-buttons">
+                    <button class="btn-primary">
+                        Top Donors
+                    </button>
+                    <button class="btn-primary">
+                        Find Donors
+                    </button>
+                </div>
+            </div>
+            
+            <div class="banner-img">
+                <img src="assets/images/human-blood-donate-white.png" alt="">
+            </div>
+        </section>
+    </header>
+
+    <!-- Body -->
+    <main class="container">
+        <div class="card-wrapper">
+            <div class="card-header">
+                <h2>Why Donate</h2>
+                <div></div>
+                <p>
+                    Blood donation is a simple, yet powerful act that can save lives.Every two seconds, someone in the world needs blood.By donating, you can help patients undergoing surgery, recovering from accidents, battling cancer, and suffering from chronic illnesses.Your contribution makes a critical difference and provides hope to those in need.
+                </p>
+            </div>
+            <div class="card-title">
+                <h2>Benefits of Donating Blood</h2>
+            </div>
+            <div class="card-container">
+
+                <!-- card 01 -->
+                <div class="card">
+                    <img src="assets/images/card1.png" alt="">
+                    <div class="card-text">
+                        <h3>Save Lives</h3>
+                        <p>One donation can save up to
+                        three lives.</p>
+                    </div>
+                </div>
+
+                <!-- card 02 -->
+                <div class="card">
+                    <img src="assets/images/card2.png" alt="">
+                    <div>
+                        <h3>Health Benefits</h3>
+                        <p>Regular donation can help reduce the risk of certain health conditions, like heart disease.</p>
+                    </div>
+                </div>
+
+                <!-- Card 03 -->
+                <div class="card">
+                    <img src="assets/images/card3.png" alt="">
+                    <div>
+                        <h3>Community Support</h3>
+                        <p>Your donation helps ensure a stable blood supply in your community</p>
+                    </div>
+                </div>
+
+                <!-- Card 04 -->
+                <div class="card">
+                    <img src="assets/images/card4.png" alt="">
+                    <div>
+                        <h3>Free Health Screening</h3>
+                        <p>Every donation includes a mini health check-up, including blood pressure, hemoglobin levels, and more.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-title">
+                <h2>Eligibility Criteria</h2>
+            </div>
+            <div class="card-container">
+                
+                <!-- Card 05 -->
+                <div class="card">
+                    <img src="assets/images/card5.png" alt="">
+                    <div>
+                        <h3>Age</h3>
+                        <p>You must be between 17 and 65 years old.</p>
+                    </div>
+                </div>
+
+                <!-- Card 06 -->
+                <div class="card">
+                    <img src="assets/images/card6.png" alt="">
+                    <div>
+                        <h3>Weight</h3>
+                        <p>You must weigh at least 50 kg</p>
+                    </div>
+                </div>
+
+                <!-- Card 07 -->
+                <div class="card">
+                    <img src="assets/images/card7.png" alt="">
+                    <div>
+                        <h3>Health</h3>
+                        <p>You must be in good general health. Certain medical conditions and medications may affect your eligibility</p>
+                    </div>
+                </div>
+
+                <!-- Card 08 -->
+                <div class="card">
+                    <img src="assets/images/card8.png" alt="">
+                    <div>
+                        <h3>Recent Activity</h3>
+                        <p>You should not have donated blood in the last 120 days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback-form">
+            <h2>Feedback</h2>
+            <form action="#" method="post">
+                <div class="input_container">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" required />
+                </div>
+                <div class="input_container">
+                    <!-- <i class="fa-solid fa-message"></i> -->
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                     <!-- <img src="assets/icons/Review.png" alt=""> -->
+                    <textarea type="text"  name="message" placeholder="Feedback here"></textarea>
+                </div>
+
+                <input type="submit" value="SUBMIT" class="btn-primary"/>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container">
+        <div class="footer-wrapper">
+            <div class="footer-first-column">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="footer-text">
+                    <p>At Aldam, our mission is to save lives by promoting and facilitating blood donation.</p>
+                </div>
+                <div class="footer-social">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-second-column">
+                <h3>About</h3>
+                <p>Design by <br> <b>MD. Ibrahim</b> </p>
+                <p>Fontend Developed by <br> <b>Faisal Ahammod</b> </p>
+                <p>Backend Developed by <br> <b>Thofiqul Islam</b> </p>
+                <p>Company belongs to <br> <b>Markin bracknell Ai</b> </p>
+            </div>
+            <div class="footer-third-column">
+                <h3>Partnership</h3>
+                <p>Bobbin</p>
+            </div>
+            <div class="footer-fourth-column">
+                <h3>Contacts</h3>
+                <p>01890429462</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+     <section class="copyright">
+        <div class="container">
+            <div class="copyright-text">
+                <p>2024 ALDAM. All Right Reserved</p>
+            </div>
+            <div class="goto-top-btn">
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+     </section>
+    <!-- Script For Navbar Toggle menue of nabvar -->
+    <script>
+        let menuList = document.getElementById("menuList");
+        window.addEventListener('DOMContentLoaded', function () {
+            if (window.innerWidth >= 768) {
+                menuList.style.height = 'auto';
+            } else {
+                menuList.style.height = '0px';
+            }
+        });
+
+        function toggleMenu(){
+            if(menuList.style.height == "0px")
+            {
+                menuList.style.height = "auto";
+            }
+            else{
+                menuList.style.height = "0px";
+            }
+        }
+
+        // This function is not necessary for users but for dev mode
+        window.addEventListener('resize', function () {
+            if (window.innerWidth >= 768) {
+                menuList.style.height = 'auto';
+            } else {
+                menuList.style.height = '0px';
+            }
+        });
+
+
+        
+    </script>
+</body>
+
+</html>
